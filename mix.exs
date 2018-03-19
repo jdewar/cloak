@@ -17,7 +17,10 @@ defmodule Cloak.Mixfile do
   end
 
   def application do
-    [applications: [:poison, :logger]]
+    [
+      applications: [:logger],
+      extra_applications: [:poison]
+    ]
   end
 
   defp deps do
